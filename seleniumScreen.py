@@ -12,6 +12,7 @@ def screenShotVideoYT(id,times):
     url = "https://www.youtube.com/embed/"+id+"?start="+str(times)
     # driver.get("https://www.youtube.com/watch?v=NXcR7fgo7vE&t=60s")
     driver.get(url)
+    print("OK")
     driver.find_element(By.TAG_NAME, "video")
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, ".ytp-progress-bar-container"))
