@@ -3,9 +3,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.chrome.service import Service
 
 def screenShotVideoYT(id,times):
-    driver = webdriver.Chrome()
+    service = Service('/home/ubuntu/driveSelenium/chromedriver')
+    driver = webdriver.Chrome(service=service)
     url = "https://www.youtube.com/embed/"+id+"?start="+str(times)
     # driver.get("https://www.youtube.com/watch?v=NXcR7fgo7vE&t=60s")
     driver.get(url)
