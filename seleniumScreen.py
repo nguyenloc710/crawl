@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 def screenShotVideoYT(id,times):
-    driver = webdriver.Chrome(executable_path="/home/ubuntu/driveSelenium/chromedriver")
+    driver = webdriver.Chrome()
     url = "https://www.youtube.com/embed/"+id+"?start="+str(times)
     # driver.get("https://www.youtube.com/watch?v=NXcR7fgo7vE&t=60s")
     driver.get(url)
