@@ -121,3 +121,14 @@ JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error:
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1683303709233	geckodriver	INFO	Listening on 127.0.0.1:59918
+1683303712298	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59919" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ACER\\AppData\\Local\\Temp\\rust_mozprofileWDf3EH"
+1683303712713	Marionette	INFO	Marionette enabled
+1683303712717	Marionette	INFO	Listening on port 59928
+Read port: 59928
+WebDriver BiDi listening on ws://127.0.0.1:59919
+1683303712799	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ACER\\AppData\\Local\\Temp\\rust_mozprofileWDf3EH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59919/devtools/browser/8bc3f4eb-18b7-43fa-a13c-5c6764add621
+JavaScript warning: https://www.google.com/js/th/CArqea_BMtmFg-uSis-Ut8_SWhTX20Rj4YEAuxCzmAg.js line 2 > eval line 5367 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1683303718025	Marionette	INFO	Stopped listening on port 59928
