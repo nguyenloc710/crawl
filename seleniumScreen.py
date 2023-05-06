@@ -6,6 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.firefox.service import Service
 
 def screenShotVideoYT(id,times):
+    print("start")
     # options = FirefoxOptions()
     # options.binary_location = 'C:/Program Files/Mozilla Firefox/firefox.exe'
     # driver = webdriver.Firefox(options=options, executable_path="D:\drive\geckodriver.exe")
