@@ -2,13 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 
 print("start")
-# options = FirefoxOptions()
-# options.binary_location = 'C:/Program Files/Mozilla Firefox/firefox.exe'
-# driver = webdriver.Firefox(options=options, executable_path="D:\drive\geckodriver.exe")
 options = webdriver.FirefoxOptions()
 options.headless = True
 
-service = Service("/snap/bin/geckodriver")
+service = Service("/home/ubuntu/driveSelenium/geckodriver")
 driver = webdriver.Firefox(options=options, service=service)
 print("done drive")
 
