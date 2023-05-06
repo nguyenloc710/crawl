@@ -1,9 +1,8 @@
 from selenium import webdriver
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.firefox.service import Service
 
 print("start")
-binary = FirefoxBinary('/usr/bin/firefox')
+binary = '/usr/bin/firefox'
 options = webdriver.FirefoxOptions()
 options.headless = True
 
