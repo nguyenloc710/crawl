@@ -3,12 +3,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver import FirefoxOptions
+from selenium.webdriver.firefox.service import Service
 
 def screenShotVideoYT(id,times):
-    options = FirefoxOptions()
-    options.binary_location = '/usr/bin/firefox'
-    driver = webdriver.Firefox(options=options, executable_path="/snap/bin/geckodriver")
+    # options = FirefoxOptions()
+    # options.binary_location = 'C:/Program Files/Mozilla Firefox/firefox.exe'
+    # driver = webdriver.Firefox(options=options, executable_path="D:\drive\geckodriver.exe")
+    options = webdriver.FirefoxOptions()
+    options.headless = True
+
+    service = Service("/snap/bin/geckodriver")
+    driver = webdriver.Firefox(options=options, service=service)
     url = "https://www.youtube.com/embed/"+id+"?start="+str(times)
     # driver.get("https://www.youtube.com/watch?v=NXcR7fgo7vE&t=60s")
     driver.get(url)
