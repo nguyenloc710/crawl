@@ -40,4 +40,5 @@ def screenShotVideoYT(id,times):
              a.remove();
             })(window, document)
             """)
+    driver.close()
 screenShotVideoYT("uYhT8FL9aHo","60")
