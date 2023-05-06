@@ -15,6 +15,7 @@ def screenShotVideoYT(id,times):
 
     service = Service("/snap/bin/geckodriver")
     driver = webdriver.Firefox(options=options, service=service)
+    print("done drive")
     url = "https://www.youtube.com/embed/"+id+"?start="+str(times)
     # driver.get("https://www.youtube.com/watch?v=NXcR7fgo7vE&t=60s")
     driver.get(url)
